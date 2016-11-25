@@ -1,0 +1,16 @@
+parameters:
+    # Service classes definitions:
+    kraken_collective.ws_symfony.loop:                      Kraken\Loop\Loop
+    kraken_collective.ws_symfony.select_loop:               Kraken\Loop\Model\SelectLoop
+    kraken_collective.ws_symfony.socket_listener:           Kraken\Ipc\Socket\SocketListener
+    kraken_collective.ws_symfony.network_server:            Kraken\Network\NetworkServer
+    kraken_collective.ws_symfony.websocket_server:          Kraken\Network\Websocket\WsServer
+    kraken_collective.ws_symfony.session_provider:          KrakenCollective\WsSymfonyBundle\Session\SessionProvider
+    kraken_collective.ws_symfony.authentication_provider:   KrakenCollective\WsSymfonyBundle\Auth\AuthenticationProvider
+    kraken_collective.ws_symfony.server_component:          KrakenCollective\WsSymfonyBundle\Server\ServerComponent
+    kraken_collective.ws_symfony.server:                    KrakenCollective\WsSymfonyBundle\Server\Server
+    kraken_collective.ws_symfony.server_config:             KrakenCollective\WsSymfonyBundle\Server\ServerConfig
+    kraken_collective.ws_symfony.server_provider:           KrakenCollective\WsSymfonyBundle\Server\Provider\ServerProvider
+    kraken_collective.ws_symfony.server_config_provider:    KrakenCollective\WsSymfonyBundle\Server\Provider\ServerConfigProvider
+    kraken_collective.ws_symfony.client_event_dispatcher:   KrakenCollective\WsSymfonyBundle\Dispatcher\ClientEventDispatcher
+    kraken_collective.ws_symfony.connection_helper:         KrakenCollective\WsSymfonyBundle\Helper\ConnectionHelper

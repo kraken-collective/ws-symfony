@@ -1,0 +1,25 @@
+services:
+    kraken.ws.server_provider:
+        class: "%kraken_collective.ws_symfony.server_provider%"
+        calls:
+            - ["setContainer", ["@service_container"]]
+
+    kraken.ws.server_config_provider:
+        class: "%kraken_collective.ws_symfony.server_config_provider%"
+        calls:
+            - ["setContainer", ["@service_container"]]
+
+    kraken.ws.connection_helper:
+        class: "%kraken_collective.ws_symfony.connection_helper%"
+
+    kraken.ws.loop_model.select_loop:
+        class: "%kraken_collective.ws_symfony.select_loop%"
+        public: false
+        tags:
+            - { name: kraken.loop_model, alias: select_loop }
+
+    kraken.ws.dispatcher.client_event:
+        class: "%kraken_collective.ws_symfony.client_event_dispatcher%"
+        public: false
+        arguments:
+            - "@event_dispatcher"

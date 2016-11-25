@@ -1,0 +1,44 @@
+{
+  "name": "kraken-collective/ws-symfony-bundle",
+  "type": "symfony-bundle",
+  "description": "Symfony Websocket Bundle",
+  "keywords": ["websocket", "kraken", "symfony", "bundle"],
+  "homepage": "https://github.com/kraken-collective/ws-symfony",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Kamil Jamróz"
+    },
+    {
+      "name": "Michał Kurzeja",
+      "email": "mike.kurzeja@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^5.5.9 || ^7.0",
+    "symfony/framework-bundle": "^3.0",
+    "symfony/console": "^3.0",
+    "symfony/security-bundle": "^3.0",
+    "kraken-php/network": "dev-master"
+  },
+  "require-dev": {
+    "symfony/phpunit-bridge": "^2.7 || ^3.0",
+    "phpunit/phpunit": "~4.8|~5.0"
+  },
+  "suggest": {
+    "snc/redis-bundle": "Provides an alternative SessionHandler (native session handlers won't work with this bundle)."
+  },
+  "autoload": {
+    "psr-4": {
+      "KrakenCollective\\WsSymfonyBundle\\": ""
+    },
+    "exclude-from-classmap": [
+      "/Tests/"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "KrakenCollective\\WsSymfonyBundle\\Tests\\": "Tests/"
+    }
+  }
+}
