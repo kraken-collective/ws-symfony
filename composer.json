@@ -19,7 +19,7 @@
     "symfony/framework-bundle": "^3.0",
     "symfony/console": "^3.0",
     "symfony/security-bundle": "^3.0",
-    "kraken-php/network": "dev-master"
+    "kraken-php/network": "^0.3.2"
   },
   "require-dev": {
     "symfony/phpunit-bridge": "^2.7 || ^3.0",
