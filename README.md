@@ -1,44 +1,23 @@
-Installation
-============
+# WsSymfonyBundle #
 
-Step 1: Download the Bundle
----------------------------
+## About ##
 
-Open a command console, enter your project directory and execute the
-following command to download the latest stable version of this bundle:
+This bundle integrates [Kraken Framework Network Component](https://github.com/kraken-php/network) into your Symfony application.
 
-```console
-$ composer require <package-name> "~1"
-```
+## Branches ##
 
-This command requires you to have Composer installed globally, as explained
-in the [installation chapter](https://getcomposer.org/doc/00-intro.md)
-of the Composer documentation.
+* Use version `1.0.*` or the `1.0` branch. The bundle requires Symfony `3.0` or higher.
 
-Step 2: Enable the Bundle
--------------------------
+This bundle is also available via [composer](https://github.com/composer/composer), find it on [packagist](http://packagist.org/packages/kraken-collective/ws-symfony-bundle).
 
-Then, enable the bundle by adding it to the list of registered bundles
-in the `app/AppKernel.php` file of your project:
+## Documentation ##
 
-```php
-<?php
-// app/AppKernel.php
+[Read the documentation in Resources/doc/](https://github.com/kraken-collective/ws-symfony/blob/master/Resources/doc/index.md)
 
-// ...
-class AppKernel extends Kernel
-{
-    public function registerBundles()
-    {
-        $bundles = array(
-            // ...
+## Demo application
 
-            new <vendor>\<bundle-name>\<bundle-long-name>(),
-        );
+To see WsSymfonyBundle in action clone this [example app repository](https://github.com/kraken-collective/ws-symfony-example). It's a simple chat application based on WebSocket communication between clients and the server.
 
-        // ...
-    }
+## License ##
 
-    // ...
-}
-```
+See [Resources/meta/LICENSE](https://github.com/kraken-collective/ws-symfony/blob/master/Resources/meta/LICENSE).
