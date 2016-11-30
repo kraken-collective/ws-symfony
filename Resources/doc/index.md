@@ -98,7 +98,7 @@ kraken_collective_ws_symfony:
 
 #### Anonymous access
 
-By default the anonymous User is not going to be denied the access. If you'd like to change that behaviour you can simply set the `allow_anonymous` option:  
+By default the anonymous User is going to be denied the access. If you'd like to change that behaviour you can simply set the `allow_anonymous` option:  
 
 ```yaml
 # app/config.yml
